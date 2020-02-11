@@ -27,7 +27,7 @@ class MoviesController < ApplicationController
     session[:ratings] = @ratings_param
 
     # Show sorted movies of the checked ratings
-    @movies = Movie.where(rating: session[:ratings].keys).order(session[:sort])
+    #@movies = Movie.where(rating: session[:ratings].keys).order(session[:sort])
   end
 
   def new
